@@ -59,9 +59,14 @@ input#menu-hamburguesa~ul{
     flex-direction: column;
     text-decoration: none;
     z-index: 1;
-
-    gap: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 3rem;
     transition: all 300ms ease-in-out;
+}
+
+input#menu-hamburguesa:checked ~ul{
+    right: 0;
 }
 
 .section-header{
@@ -117,11 +122,6 @@ h1{
 
 .twitter-icon{
     left: 200px;
-}
-
-input#menu-hamburguesa:checked ~ul{
-    right: 0;
-
 }
 
 .circle-1{
@@ -474,11 +474,13 @@ h2{
         color:black;
         padding: .5rem 1rem;
         border-bottom: 2px solid transparent;
-        transition: all .5s ease-in-out;
+        transition: all .3s;
     }
     
     nav > ul > li > a:hover{
-        border-color:#f26440; 
+        border-color:#f26440;
+        font-weight: bold;
+        color: #f26440; 
     }
     h1{
         font-size: 4rem;
@@ -829,6 +831,88 @@ h2{
         position: absolute;
         bottom: 0px;
     }
+
+}
+
+@media only screen and ( max-width: 400px ){
+
+    .hola>img{
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 400px;
+    }
+
+    h1{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .header-presentacion-icons{
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #f26440;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 25px;
+    }
+
+    .linkedin-icon{
+  
+    }
+    
+    .insta-icon{
+        top: 203px;
+        left: 80px;
+    }
+    
+    .twitter-icon{
+        top: 203px;
+        left: 160px;
+    }
+
+    .section-about{
+        padding: 0rem 30px;
+        margin-bottom: 60px;
+    }
+
+    .section-habilities{
+        padding: 1rem;
+        margin-bottom: 640px;
+    }
+
+    .hability-contenedor{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        left: 5vw;
+        max-width: 90vw;
+        overflow-x: scroll;
+        margin: 150px 0;
+    }
+
+    .section-habilities>h2{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #286f6c;
+        display: flex;
+        position: absolute;
+        left: 30px;
+        padding: 60px 0 ;
+        margin-bottom: 80px;
+    
+    }
+
+    .section-experience{
+        padding: 0 30px;
+        margin-bottom: 150px;
+    } 
+    
 
 }
 
